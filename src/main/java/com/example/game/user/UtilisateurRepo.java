@@ -1,4 +1,4 @@
-package game.user;
+package com.example.game.user;
 
 import java.util.List;
 
@@ -10,6 +10,8 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 public interface UtilisateurRepo extends MongoRepository<Utilisateur, String> {
 
 	List<Utilisateur> findByNom(@Param("name") String name);
+
 	List<Utilisateur> findByPrenom(@Param("name") String name);
+
 	List<Utilisateur> findByNomUtilisateur(@Param("name") String name);
 }
