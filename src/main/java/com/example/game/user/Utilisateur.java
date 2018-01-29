@@ -12,6 +12,17 @@ public class Utilisateur {
 	private String email;
 	private String nomUtilisateur;
 
+	public Utilisateur () {}
+
+	public Utilisateur (String prenom, String nom,
+	String email, String nomUtilisateur) {
+		this.prenom=prenom;
+		this.nom = nom;
+		this.email = email;
+		this.nomUtilisateur = nomUtilisateur;
+	}
+
+
 	public String getPrenom() {
 		return prenom;
 	}

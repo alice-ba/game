@@ -16,6 +16,24 @@ public class Personnage {
 	private String sac;
 	private String competences;
 
+	public Personnage () {}
+
+	public Personnage (String prenom, String nom,
+	String classe, String attaque, String defense, String pv, String sac, String competences) {
+		this.prenom=prenom;
+		this.nom = nom;
+		this.classe = classe;
+		this.attaque = attaque;
+		this.defense = defense;
+		this.pv = pv;
+		this.sac = sac;
+		this.competences = competences;
+	}
+
+
+
+
+
 	public String getPrenom() {
 		return prenom;
 	}
